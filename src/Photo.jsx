@@ -2,7 +2,6 @@ import React from "react";
 import { memo } from "react";
 
 const Photo = memo((props) => {
-  console.log("for some reason I'm running!");
   return (
     <article className="photo">
       <img src={props.urls.regular} />

@@ -43,11 +43,10 @@ function App() {
 
       if (scrollTime) {
         setPage((p) => p + 1);
-        console.log("im here");
       }
     });
     return () => window.removeEventListener("scroll", event);
-  }, [page]);
+  }, []);
 
   React.useEffect(() => {
     fetchPhotos();
